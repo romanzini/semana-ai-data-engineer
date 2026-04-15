@@ -1,4 +1,4 @@
-With both MCP servers connected, ask Claude Code hybrid questions that need
+With both MCP servers connected, ask Github Copilot hybrid questions that need
 BOTH stores:
 
 1. "Quais clientes do Sudeste reclamam de entrega?" (Qdrant first)
