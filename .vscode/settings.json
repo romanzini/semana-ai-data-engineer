@@ -1,0 +1,10 @@
+{
+    "chat.mcp.serverSampling": {
+        "semana-ai-data-engineer/.vscode/mcp.json: firecrawl/firecrawl-mcp-server": {
+            "allowedModels": [
+                "copilot/auto",
+                "copilotcli/claude-sonnet-4.6"
+            ]
+        }
+    }
+}

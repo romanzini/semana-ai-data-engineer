@@ -1,0 +1,62 @@
+{
+	"servers": {
+		"io.github.upstash/context7": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@upstash/context7-mcp@1.0.31"
+			],
+			"env": {
+				"CONTEXT7_API_KEY": "${input:CONTEXT7_API_KEY}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.31"
+		},
+		"Exa": {
+			"url": "https://mcp.exa.ai/mcp",
+			"type": "http"
+		},
+		"Postgres": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-postgres",
+				"postgresql://shopagent:shopagent@localhost:5432/shopagent"
+			],
+			"type": "stdio"
+		},
+		"Qdrant": {
+			"command": "uvx",
+			"args": [
+				"mcp-server-qdrant"
+			],
+			"env": {
+				"QDRANT_URL": "http://localhost:6333",
+				"COLLECTION_NAME": "shopagent_reviews",
+				"EMBEDDING_MODEL": "BAAI/bge-base-en-v1.5"
+			},
+			"type": "stdio"
+		},
+		"firecrawl/firecrawl-mcp-server": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"-y",
+				"firecrawl-mcp@latest"
+			],
+			"env": {
+				"FIRECRAWL_API_KEY": "${input:FIRECRAWL_API_KEY}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		}
+	},
+	"inputs": [
+		{
+			"id": "FIRECRAWL_API_KEY",
+			"type": "promptString",
+			"description": "your Firecrawl API key",
+			"password": true
+		}
+	]
+}
