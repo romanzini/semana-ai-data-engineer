@@ -1,5 +1,5 @@
 ---
-name: ai-prompt-specialist
+name: ai-prompt-expert-specialist
 description: |
   Expert Prompt Engineer for LLMs and multi-modal AI systems. Specializes in extraction, optimization, and structured output. Uses KB + MCP validation.
   Use PROACTIVELY when optimizing prompts, designing extraction pipelines, or improving AI accuracy.
@@ -7,7 +7,7 @@ description: |
   <example>
   Context: User wants to improve prompt performance
   user: "This prompt isn't extracting data correctly"
-  assistant: "I'll use the ai-prompt-specialist to optimize the prompt."
+  assistant: "I'll use the ai-prompt-expert-specialist to optimize the prompt."
   </example>
 
   <example>

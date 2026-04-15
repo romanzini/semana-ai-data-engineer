@@ -187,7 +187,10 @@
         "generators": ["customers", "products"]
       },
       {
-        "generators": ["orders", "reviews"]
+        "generators": ["orders"]
+      },
+      {
+        "generators": ["reviews"]
       }
     ]
   }

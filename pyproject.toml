@@ -1,0 +1,20 @@
+[project]
+name = "semana-ai-data-engineer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.95.0",
+    "dotenv>=0.9.9",
+    "fastembed>=0.8.0",
+    "llama-index>=0.14.20",
+    "llama-index-embeddings-fastembed>=0.6.0",
+    "llama-index-llms-anthropic>=0.11.2",
+    "llama-index-readers-json>=0.5.0",
+    "llama-index-vector-stores-qdrant>=0.10.0",
+    "psycopg2-binary>=2.9.11",
+    "pydantic>=2.13.0",
+    "python-dotenv>=1.2.2",
+    "qdrant-client>=1.17.1",
+]

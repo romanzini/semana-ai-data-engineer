@@ -35,7 +35,7 @@ def analyze_reviews(reviews: list[dict]) -> ReviewAnalysis:
     reviews_text = json.dumps(reviews, indent=2, ensure_ascii=False)
 
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=1024,
         messages=[
             {
